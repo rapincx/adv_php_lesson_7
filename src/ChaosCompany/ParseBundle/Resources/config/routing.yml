@@ -1,0 +1,26 @@
+chaos_company_parse_homepage:
+    path:     /parse
+    defaults: { _controller: ChaosCompanyParseBundle:Default:index }
+
+chaos_company_parse_list:
+    path:     /parse/list
+    defaults: { _controller: ChaosCompanyParseBundle:ParseList:list }
+
+chaos_company_parse_add:
+    path:     /parse/add
+    defaults: { _controller: ChaosCompanyParseBundle:Default:showAddForm }
+
+chaos_company_parse_item:
+    path:     /parse/{item}
+    defaults: { _controller: ChaosCompanyParseBundle:ParseItem:showItem, item:1 }
+    requirements:
+      item: '\d+'
+
+chaos_company_parse_item_detail:
+    path:     /parse/{item}/detail/{format}
+    defaults: { _controller: ChaosCompanyParseBundle:ParseItem:showDetail, format:html }
+    requirements:
+      item: '\d+'
+      format: html|json
+
+

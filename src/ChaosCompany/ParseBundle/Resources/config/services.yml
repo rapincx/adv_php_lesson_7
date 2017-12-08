@@ -1,0 +1,6 @@
+services:
+#    chaos_company_parse.example:
+#        class: ChaosCompany\ParseBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+#    chaos_company_parse.service.parse_updater
+#        class: ChaosCompany\ParseBundle\Service\ParseUpdater
